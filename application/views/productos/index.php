@@ -1,18 +1,9 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Productos</title>
-</head>
-<body>
-    <h1>Listado de Productos</h1>
-    <ul>
-        <?php foreach ($productos as $producto): ?>
-            <li>
-                <a href="<?php echo site_url('productos/view/'.$producto['id']); ?>">
-                    <?php echo $producto['nombre']; ?>
-                </a>
-            </li>
-        <?php endforeach; ?>
-    </ul>
-</body>
-</html>
+<h2><?php echo $title; ?></h2>
+
+<?php foreach ($products as $product): ?>
+    <h3><?php echo $product['name']; ?></h3>
+    <div class="main">
+        <?php echo $product['price']; ?> USD
+    </div>
+    <p><a href="<?php echo site_url('product/view/'.$product['id']); ?>">Ver Detalles</a></p>
+<?php endforeach; ?>

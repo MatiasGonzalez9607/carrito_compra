@@ -1,13 +1,8 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title><?php echo $producto['nombre']; ?></title>
-</head>
-<body>
-    <h1><?php echo $producto['nombre']; ?></h1>
-    <p><strong>Precio:</strong> <?php echo $producto['precio']; ?></p>
-    <p><strong>Stock:</strong> <?php echo $producto['stock']; ?></p>
-    <p><strong>Código:</strong> <?php echo $producto['codigo']; ?></p>
-    <a href="<?php echo site_url('productos'); ?>">Volver al listado</a>
-</body>
-</html>
+<h2><?php echo $title; ?></h2>
+
+<div>
+    <h3>Nombre: <?php echo $product['name']; ?></h3>
+    <p>Precio: <?php echo $product['price']; ?> USD</p>
+    <p>Stock: <?php echo $product['stock']; ?></p>
+    <p>Código: <?php echo $product['code']; ?></p>
+</div>
